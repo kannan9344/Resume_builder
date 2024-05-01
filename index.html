@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="resume-tools">
+        <div class="tool">
+          <h3>profile</h3>
+          <div class="tool-row">
+            <div class="tool-col">
+              <label for="name">name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="tool-col">
+              <label for="role">role</label>
+              <input type="text" id="role" />
+            </div>
+          </div>
+        </div>
+        <div class="tool" style="display: none;">
+          <h3>Image</h3>
+         <input type="file" id="image-file">
+        </div>
+        <div class="tool">
+          <h3>summary</h3>
+          <textarea id="summary"></textarea>
+        </div>
+        <div class="tool">
+          <h3>Contact</h3>
+          <div class="tool-row">
+            <div class="tool-col">
+              <label for="number">Number</label>
+              <input type="number" id="number" />
+            </div>
+            <div class="tool-col">
+              <label for="email">email</label>
+              <input type="email" id="email" />
+            </div>
+          </div>
+
+          <label for="address">address</label>
+          <textarea id="address"></textarea>
+        </div>
+        <div class="tool">
+          <h3>education</h3>
+          <div class="tool-row">
+            <div class="tool-col">
+              <label for="year">year</label>
+              <input type="text" id="year" />
+              <label for="college">college</label>
+              <input type="text" id="college" />
+            </div>
+            <div class="tool-col">
+              <label for="department">department</label>
+              <input type="text" id="department" />
+            </div>
+          </div>
+          <div class="skill-btn education">Add</div>
+        </div>
+        <div class="tool">
+          <h3>skills</h3>
+          <div class="tool-row">
+            <div class="tool-col">
+              <input type="text" id="skill" />
+            </div>
+          </div>
+          <div class="skill-btn skill">Add</div>
+        </div>
+        <div class="tool">
+          <h3>experience</h3>
+          <div class="tool-row">
+            <div class="tool-col">
+              <label for="exyear">year</label>
+              <input type="text" id="exyear" />
+              <label for="cname">company name</label>
+              <input type="text" id="cname" />
+            </div>
+            <div class="tool-col">
+              <label for="crole">role</label>
+              <input type="text" id="crole" />
+              <label for="des">description</label>
+              <input type="text" id="des" />
+            </div>
+          </div>
+          <div class="skill-btn experience">Add</div>
+        </div>
+        <div class="tool">
+          <h3>projects</h3>
+          <div class="tool-row">
+            <div class="tool-col">
+              <label for="prolink">project link</label>
+              <input type="text" id="prolink" />
+              <label for="proname">project name</label>
+              <input type="text" id="proname" />
+            </div>
+            <div class="tool-col">
+              <label for="prodes">project description</label>
+              <input type="text" id="prodes" />
+            </div>
+          </div>
+          <div class="skill-btn projects">Add</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="user-image">
+            <img src="src/user.jpg" id="user-image" />
+            <label for="image-file" class="plus" >
+              <i class="fa fa-plus"></i>
+            </label>
+           
+          </div>
+          <div class="card">
+            <h3>Contact</h3>
+            <div class="card-text">
+              <strong>phone :</strong>
+              <div class="number">+91 9674863759</div>
+            </div>
+            <div class="card-text">
+              <strong>email :</strong>
+              <div class="mail">sample@gmail.com</div>
+            </div>
+            <div class="card-text">
+              <strong>address :</strong>
+              <div class="address">165/5,north street,delhi</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>education</h3>
+            <div class="card-head education-card">
+              <div class="card-body">
+                <div class="year">2020-2023</div>
+                <strong class="college">University of pune,india</strong>
+                <div class="department">Masters of business Administration</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>skills</h3>
+            <ul class="skill-container">
+              <li>SEO</li>
+              <li>grapic design</li>
+              <li>google analytics</li>
+              <li>adwords</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h1 class="empty name">Jonathan</h1>
+            <div class="role empty">social media manager</div>
+          </div>
+          <div class="card">
+            <h3 class="empty">personal profile</h3>
+            <p class="empty summary">
+             i am a highly motivated social media export with over seven tear of experience i have strong creative and marketing skills really good at communication and handling clients
+            </p>
+          </div>
+          <div class="card">
+            <h3>work experience</h3>
+            <div class="exyear">2024-present</div>
+            <strong class="companyname">start-up company</strong>
+            <div class="job-role">socialmedia manager</div>
+            <ul class="ex-container">
+              <li>search engine optimization for social media posts</li>
+              <li>developed creative and engaging social media strategies</li>
+              <li>managed day-to-day handling of all social media channels and adapting content to suit different channels</li>
+           
+            </ul>
+          </div>
+          <div class="card">
+            <h3>projects</h3>
+            <a href="#" class="plink">www.goole.com</a>
+            <strong class="pname">google</strong>
+            <ul class="pdes">
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="print-btn">Print CV</div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
